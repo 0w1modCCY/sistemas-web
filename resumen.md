@@ -8,6 +8,8 @@
 3.1 [Arrays](#arrays)  
 3.2 [Ejercicios](#ejer-tema2)
 4. [**Javascript y DOM**](#tema3)
+4.1 [Github Code Spaces](#github-code-spaces)
+4.2 [Ejercicio](#ejer-tema3)
 
 ## Introducción <a name="intro"></a>
 juanan.pereira@ehu.eus
@@ -208,3 +210,182 @@ Apuntes sobre arrays en Javascript:
 ## Javascript y DOM <a name="tema3"></a>
 [tema3.pdf](files/tema3.pdf)
 
+DOM = Document Object Model
+
+**Orden de ejecuccion:**
+1º Carga del HTML
+2º Carga del CSS
+3º Carga del JS
+4º Ejecución del JS
+5º Ejecución del CSS
+6º Ejecución del HTML
+
+```
+let x = document.getElementById("dos")
+x.innerHTML = "Hola"
+```
+
+Debido a que se ejecuta primero el javascript y luego el html, si queremos modificar el html desde javascript, tenemos que hacerlo despues de que se haya cargado el html.
+Para ello, podemos usar el **evento onload**:
+```
+window.onload = function() {
+    let x = document.getElementById("dos")
+    x.innerHTML = "Hola"
+}
+```
+
+### Github Code Spaces <a name="github-code-spaces"></a>
+[github-code-spaces.pdf](files/github-code-spaces.pdf)
+
+A codespace is a development environment that's hosted in the cloud. You can customize your project for GitHub Codespaces by committing configuration files to your repository (often known as Configuration-as-Code), which creates a repeatable codespace configuration for all users of your project.
+
+### Ejercicio <a name="ejer-tema3"></a>
+[**Enunciado**](files/ejercicios-tema3/enunciado.pdf)  
+- [index.html](files/ejercicios-tema3/index.html)
+- [script.js](files/ejercicios-tema3/script.js)
+
+## Javascript funcional y POO <a name="tema4"></a>
+Programación funcional  
+[tema4-funcional.pdf](files/tema4-funcional.pdf)  
+
+Programación orientada a objetos  
+[tema4-poo.pdf](files/tema4-poo.pdf)
+
+### .forEach()
+Ejemplo 1
+```
+let tabla = [1, 2, 3, 4, 5]
+tabla.forEach(function(elemento) {
+    console.log(elemento)
+})
+```
+Ejemplo 2
+```
+let officers = [
+    { id: 20, name: 'Captain Piett' },
+    { id: 24, name: 'General Veers' },
+    { id: 56, name: 'Admiral Ozzel' },
+    { id: 88, name: 'Commander Jerjerrod' }
+]
+
+let officersIds = []
+officers.forEach(function(officer) {
+    officersIds.push(officer.id)
+})
+
+console.log(officersIds) // [20, 24, 56, 88]
+```
+
+### .map()
+Ejemplo 1
+```
+let tabla = [1, 2, 3, 4, 5]
+let tabla2 = tabla.map(function(elemento) {
+    return elemento * 2
+})
+console.log(tabla2) // [2, 4, 6, 8, 10]
+```
+Ejemplo 2
+```
+let officers = [
+    { id: 20, name: 'Captain Piett' },
+    { id: 24, name: 'General Veers' },
+    { id: 56, name: 'Admiral Ozzel' },
+    { id: 88, name: 'Commander Jerjerrod' }
+]
+
+let officersIds = officers.map(function(officer) {
+    return officer.id
+})
+
+console.log(officersIds) // [20, 24, 56, 88]
+```
+
+### .reduce()
+Ejemplo 1
+```
+let tabla = [1, 2, 3, 4, 5]
+let suma = tabla.reduce(function(acumulador, elemento) {
+    return acumulador + elemento
+})
+
+console.log(suma) // 15
+```
+Ejemplo 2
+```
+let officers = [
+    { id: 20, name: 'Captain Piett' },
+    { id: 24, name: 'General Veers' },
+    { id: 56, name: 'Admiral Ozzel' },
+    { id: 88, name: 'Commander Jerjerrod' }
+]
+
+let officersIds = officers.reduce(function(acumulador, officer) {
+    acumulador.push(officer.id)
+    return acumulador
+}, [])
+
+console.log(officersIds) // [20, 24, 56, 88]
+```
+Ejemplo 3
+```
+const pilots = [
+    {
+        id: 2,
+        name: "Wedge Antilles",
+        faction: "Rebels",
+        years: 14
+    },
+    {
+        id: 8,
+        name: "Ciena Ree",
+        faction: "Empire",
+        years: 4
+    },
+    {
+        id: 40,
+        name: "Iden Versio",
+        faction: "Empire",
+        years: 4
+    },
+    {
+        id: 66,
+        name: "Thane Kyrell",
+        faction: "Rebels",
+        years: 11
+    }
+]
+
+const totalYears = pilots.reduce(function (acc, pilot) {
+    return acc + pilot.years
+}, 0)
+
+console.log(totalYears) // 33
+```
+
+### .filter()
+Ejemplo 1
+```
+let tabla = [1, 2, 3, 4, 5]
+
+let tabla2 = tabla.filter(function(elemento) {
+    return elemento % 2 == 0
+})
+
+console.log(tabla2) // [2, 4]
+```
+Ejemplo 2
+```
+let officers = [
+    { id: 20, name: 'Captain Piett' },
+    { id: 24, name: 'General Veers' },
+    { id: 56, name: 'Admiral Ozzel' },
+    { id: 88, name: 'Commander Jerjerrod' }
+]
+
+let officersIds = officers.filter(function(officer) {
+    return officer.id > 50
+})
+
+console.log(officersIds) // [{ id: 56, name: 'Admiral Ozzel' }, { id: 88, name: 'Commander Jerjerrod' }]
+```
