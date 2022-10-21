@@ -170,7 +170,7 @@ tabla.length
 ```
 
 ### Arrays <a name="arrays"></a>
-```
+
 Apuntes sobre arrays en Javascript:  
 [arrays.pdf](files/arrays.pdf)
 
@@ -195,7 +195,6 @@ Apuntes sobre arrays en Javascript:
 15) [ 1, 2, 3 ]
 16) [ 4, 5, 6 ]
 17) Alex,Juan,Tomy,John
-```
 
 ### Ejercicios <a name="ejer-tema2"></a>
 [**Enunciados**](files/ejercicios-tema2/enunciados.pdf)
@@ -500,11 +499,61 @@ let alumno2 = new Alumno("Pepe", 20, "2º DAM")
 alumno2.saludar()
 ```
 
-### Ejercicio 1 <a name="ejer-tema4"></a>
+### Ejercicios <a name="ejer-tema4"></a>
 
-[**Enunciado**](files/ejercicios-tema4/enunciado.pdf)  
-[Ejercicio](files/ejercicios-tema4/ejercicio.js)
+Ejercicio de Programacion Funcional  
+[**Enunciado**](files/ejercicios-tema4/funcional/enunciado.pdf)  
+[Ejercicio](files/ejercicios-tema4/funcional/ejercicio.js)  
 
+Ejercicio de Programacion Orientada a Objetos  
+[**Enunciado**](files/ejercicios-tema4/poo/enunciado.pdf)  
+[Ejercicio](files/ejercicios-tema4/poo/js/main.mjs)
+
+## Debugger <a name="tema5"></a>
+
+Clases grabadas sobre debugger:
+- [**Clase 1**](https://youtu.be/qBHhuXQ5e14)
+- [**Clase 2**](https://youtu.be/A_Zz1rR1WPs)
+- [**Clase 3**](https://youtu.be/qEJOMK0m0fY)
+
+### Ejercicios <a name="ejer-tema5"></a>
+Ejercicio del debugger:
+
+#### ¿Cuantas celdas con un valor diferente a 1?
+585 celdas con valor 7
+24470 celdas mas calientes
+
+#### ¿Posicion mas elevada con 
+
+## Repaso, JSON, fetch y promesas <a name="tema6"></a>
+
+[tema6.pdf](files/tema6.pdf)
+
+### Repaso
+
+### JSON
+
+### fetch
+
+### Promesas
+[promesas.pdf](files/promesas.pdf)
+
+### Ejercicios <a name="ejer-tema6"></a>
+
+#### Ejercicio 1
+[**Enunciado**](https://github.com/juananpe/flexbase)
+
+#### Ejercicio 2
+[**Enunciado**](https://github.com/nbarrena/openlibrary-partial-solution)
+
+#### Ejercicio 3
+[**Preguntas de repaso**](files/ejercicios-tema6/preguntas_repaso.pdf)  
+[Soluciones](files/preguntas_repaso.md)
+
+
+## Práctica <a name="practica"></a>
+
+[**Enunciado**](practica/enunciado.pdf)
      
 
 
