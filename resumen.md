@@ -7,9 +7,18 @@
 3. [**Javascript basico**](#tema2)  
 3.1 [Arrays](#arrays)  
 3.2 [Ejercicios](#ejer-tema2)
-4. [**Javascript y DOM**](#tema3)
-4.1 [Github Code Spaces](#github-code-spaces)
+4. [**Javascript y DOM**](#tema3)  
+4.1 [Github Code Spaces](#github-code-spaces)  
 4.2 [Ejercicio](#ejer-tema3)
+5. [**Javascript funcional y POO**](#tema4)  
+5.1 [.forEach()](#foreach)  
+5.2 [.map()](#map)  
+5.3 [.reduce()](#reduce)  
+5.4 [.filter()](#filter)  
+5.5 [Class](#class)  
+5.6 [Herencia](#herencia)  
+5.7 [Ejercicios](#ejer-tema4)  
+6.  
 
 ## Introducción <a name="intro"></a>
 juanan.pereira@ehu.eus
@@ -251,7 +260,7 @@ Programación funcional
 Programación orientada a objetos  
 [tema4-poo.pdf](files/tema4-poo.pdf)
 
-### .forEach()
+### .forEach() <a name="foreach"></a>
 Ejemplo 1
 ```
 let tabla = [1, 2, 3, 4, 5]
@@ -276,7 +285,7 @@ officers.forEach(function(officer) {
 console.log(officersIds) // [20, 24, 56, 88]
 ```
 
-### .map()
+### .map() <a name="map"></a>
 Ejemplo 1
 ```
 let tabla = [1, 2, 3, 4, 5]
@@ -301,7 +310,7 @@ let officersIds = officers.map(function(officer) {
 console.log(officersIds) // [20, 24, 56, 88]
 ```
 
-### .reduce()
+### .reduce() <a name="reduce"></a>
 Ejemplo 1
 ```
 let tabla = [1, 2, 3, 4, 5]
@@ -363,7 +372,7 @@ const totalYears = pilots.reduce(function (acc, pilot) {
 console.log(totalYears) // 33
 ```
 
-### .filter()
+### .filter() <a name="filter"></a>
 Ejemplo 1
 ```
 let tabla = [1, 2, 3, 4, 5]
@@ -389,3 +398,113 @@ let officersIds = officers.filter(function(officer) {
 
 console.log(officersIds) // [{ id: 56, name: 'Admiral Ozzel' }, { id: 88, name: 'Commander Jerjerrod' }]
 ```
+
+### Class <a name="class"></a>
+Ejemplo 1
+```
+class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre
+        this.edad = edad
+    }
+
+    saludar() {
+        console.log("Hola, soy " + this.nombre)
+    }
+}
+```
+Ejemplo 2
+```
+class Rectangulo{
+    constructor(alto, ancho) {
+        this.alto = alto
+        this.ancho = ancho
+    }
+
+    get area() {
+        return this.calcularArea()
+    }
+
+    calcular_area() {
+        return this.alto * this.ancho
+    }
+}
+```
+Ejemplo 3
+```
+class Coche{
+    #color = "rojo"
+    constructor(marca, modelo, color) {
+        this.marca = marca
+        this.modelo = modelo
+        this.color = color
+    }
+
+    get marca() {
+        return this._marca
+    }
+
+    set marca(marca) {
+        this._marca = marca
+    }
+
+    get modelo() {
+        return this._modelo
+    }
+
+    set modelo(modelo) {
+        this._modelo = modelo
+    }
+
+    get color() {
+        return this._color
+    }
+
+    set color(color) {
+        this._color = color
+    }
+}
+```
+
+### Herencia <a name="herencia"></a>
+Ejemplo 1
+```
+class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre
+        this.edad = edad
+    }
+
+    saludar() {
+        console.log("Hola, soy " + this.nombre)
+    }
+}
+
+class Alumno extends Persona {
+    constructor(nombre, edad, curso) {
+        super(nombre, edad)
+        this.curso = curso
+    }
+
+    saludar() {
+        super.saludar()
+        console.log("Estudio " + this.curso)
+    }
+}
+
+let persona = new Persona("Juan", 23)
+let alumno1 = new Alumno(persona.nombre, persona.edad, "1º DAM")
+alumno1.saludar()  
+
+let alumno2 = new Alumno("Pepe", 20, "2º DAM")
+alumno2.saludar()
+```
+
+### Ejercicio 1 <a name="ejer-tema4"></a>
+
+[**Enunciado**](files/ejercicios-tema4/enunciado.pdf)  
+[Ejercicio](files/ejercicios-tema4/ejercicio.js)
+
+     
+
+
