@@ -552,7 +552,7 @@ Ejercicio del debugger:
 
 
 ## Práctica <a name="practica"></a>
-
+ 
 [**Enunciado**](practica/enunciado.pdf)
      
 

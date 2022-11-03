@@ -4,22 +4,9 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f326a91-a847-43e7-b81a-856088fca51c" name="Changes" comment="Tema 4 finished!">
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/enunciado.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/js/extraterrestre.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/js/humano.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/js/jugador.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/js/main.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/js/maquina.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ejercicios-tema6/preguntas_repaso.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/promesas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/tema6.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practica/enunciado.pdf" afterDir="false" />
+    <list default="true" id="5f326a91-a847-43e7-b81a-856088fca51c" name="Changes" comment="Almost everything!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ejercicios-tema4/ejercicio.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/ejercicios-tema4/funcional/ejercicio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/ejercicios-tema4/enunciado.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/files/ejercicios-tema4/funcional/enunciado.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resumen.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumen.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/ejercicios-tema4/poo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/ejercicios-tema4/poo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Victor/IdeaProjects/sistemas-web/files",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Victor/IdeaProjects/sistemas-web/files&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Victor\IdeaProjects\sistemas-web\files" />
@@ -116,7 +103,10 @@
       <workItem from="1666322859949" duration="91000" />
       <workItem from="1666323132645" duration="606000" />
       <workItem from="1666329477956" duration="718000" />
-      <workItem from="1666330690767" duration="1609000" />
+      <workItem from="1666330690767" duration="3169000" />
+      <workItem from="1666394680003" duration="74000" />
+      <workItem from="1666486193342" duration="174000" />
+      <workItem from="1666687544436" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1666313989520</created>
@@ -139,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666317812177</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Almost everything!">
+      <created>1666333013900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666333013900</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +157,7 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Tema 4" />
     <MESSAGE value="Tema 4 finished!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tema 4 finished!" />
+    <MESSAGE value="Almost everything!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost everything!" />
   </component>
 </project>
